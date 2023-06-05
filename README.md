@@ -19,10 +19,11 @@
 پس از آن که جفت سرویس ها را نوشته و داکرفایل آنها را درست کردیم به سراغ build کردن image آن ها میرویم.
 
 
-![building_weather_image](./Screenshtos/Weather_service.png)
+![building_weather_image](./Screenshots/Weather_service.png)
 
 
-![building_trip_image](./Screenshtos/trip_suggest_service.png)
+![building_trip_image](./Screenshots/trip_suggest_service.png)
+
 
 
 ![images_without_orch](./Screenshots/containers_without_orchtration.png)
