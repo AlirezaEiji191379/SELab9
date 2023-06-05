@@ -2,7 +2,6 @@ using TripSuggestProject;
 using TripSuggestProject.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://localhost:5005");
 
 // Add services to the container.
 
