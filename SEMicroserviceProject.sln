@@ -13,7 +13,25 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{584730C9-B197-4C7B-9D0B-4765F77A5346}"
 	ProjectSection(SolutionItems) = preProject
+		Screenshtos\containers_without_orchtration - Copy.png = Screenshtos\containers_without_orchtration - Copy.png
+		Screenshtos\containers_without_orchtration.png = Screenshtos\containers_without_orchtration.png
+		Screenshtos\dockerps_dockerimagels - Copy.png = Screenshtos\dockerps_dockerimagels - Copy.png
+		Screenshtos\dockerps_dockerimagels.png = Screenshtos\dockerps_dockerimagels.png
+		Screenshtos\docker_compose_services - Copy.png = Screenshtos\docker_compose_services - Copy.png
 		README.md = README.md
+		Screenshtos\trip_suggest_api_run1 - Copy.png = Screenshtos\trip_suggest_api_run1 - Copy.png
+		Screenshtos\trip_suggest_api_run1.png = Screenshtos\trip_suggest_api_run1.png
+		Screenshtos\trip_suggest_run_api2 - Copy.png = Screenshtos\trip_suggest_run_api2 - Copy.png
+		Screenshtos\trip_suggest_run_api2.png = Screenshtos\trip_suggest_run_api2.png
+		Screenshtos\trip_suggest_service - Copy.png = Screenshtos\trip_suggest_service - Copy.png
+		Screenshtos\trip_suggest_service_run - Copy.png = Screenshtos\trip_suggest_service_run - Copy.png
+		Screenshtos\trip_suggest_service_run.png = Screenshtos\trip_suggest_service_run.png
+		Screenshtos\WeatherForecast_api_run1 - Copy.png = Screenshtos\WeatherForecast_api_run1 - Copy.png
+		Screenshtos\WeatherForecast_api_run1.png = Screenshtos\WeatherForecast_api_run1.png
+		Screenshtos\weather_forecast_run - Copy.png = Screenshtos\weather_forecast_run - Copy.png
+		Screenshtos\weather_forecast_run.png = Screenshtos\weather_forecast_run.png
+		Screenshtos\Weather_service.png = Screenshtos\Weather_service.png
+		Screenshtos\weather_service_api_run2.png = Screenshtos\weather_service_api_run2.png
 	EndProjectSection
 EndProject
 Global
