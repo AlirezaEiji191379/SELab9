@@ -1,4 +1,4 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
@@ -6,16 +6,17 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["SEMicroserviceProject/SEMicroserviceProject.csproj", "SEMicroserviceProject/"]
-RUN dotnet restore "SEMicroserviceProject/SEMicroserviceProject.csproj"
+COPY ["SEMicroserviceProject/TripSuggestProject.csproj", "SEMicroserviceProject/"]
+COPY ["ServiceContracts/ServiceContracts.csproj", "ServiceContracts/"]
+RUN dotnet restore "SEMicroserviceProject/TripSuggestProject.csproj"
 COPY . .
 WORKDIR "/src/SEMicroserviceProject"
-RUN dotnet build "SEMicroserviceProject.csproj" -c Release -o /app/build
+RUN dotnet build "TripSuggestProject.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "SEMicroserviceProject.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "TripSuggestProject.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SEMicroserviceProject.dll"]
+ENTRYPOINT ["dotnet", "TripSuggestProject.dll"]
