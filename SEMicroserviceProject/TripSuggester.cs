@@ -24,7 +24,7 @@ namespace TripSuggestProject
 
         public async Task<CityDtos> GetCityDetails(string city)
         {
-            var url = $"http://localhost:5000/Forecast/Weather/{city}";
+            var url = $"http://weatherforecastservice:80/Forecast/Weather/{city}";
             var httpRequest = new HttpRequestMessage()
             {
                 
